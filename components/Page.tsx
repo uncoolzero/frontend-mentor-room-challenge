@@ -142,12 +142,10 @@ function Carousel() {
         }
       }
 
+      setTimeout(() => {handleResize()}, 5000)
+
     }, [])
 
-    useEffect(() => {
-      handleResize()
-    })
-    
     useEffect(() => {
       const scroll = scrollCarousel.current
 
