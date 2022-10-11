@@ -142,8 +142,6 @@ function Carousel() {
         }
       }
 
-      setTimeout(() => {handleResize()}, 5000)
-
     }, [])
 
     useEffect(() => {
@@ -1771,6 +1769,8 @@ function Carousel() {
           setArrowButtonOffset("lg:-right-[499px]")
           break;
       }
+
+      handleResize()
 
     }, [whiteBoxPosition, carouselWidth])
 
