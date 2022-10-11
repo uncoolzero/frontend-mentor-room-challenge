@@ -142,10 +142,12 @@ function Carousel() {
         }
       }
 
-      handleResize()
-
     }, [])
 
+    useEffect(() => {
+      handleResize()
+    })
+    
     useEffect(() => {
       const scroll = scrollCarousel.current
 
