@@ -1774,10 +1774,7 @@ function Carousel() {
 
     }, [whiteBoxPosition, carouselWidth])
 
-
-
     return (
-    
       <div>
         <div className="grid grid-cols-1 lg:flex lg:flex-row z-10">
           <div className="relative lg:col-span-7">
@@ -1834,7 +1831,7 @@ function Carousel() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_4fr_3fr]">
         <div className="w-full">
-            <img alt="Elegant dimly lit room with dark furniture" src="/image-about-dark.jpg" className="w-full h-full" />
+            <img onLoad={handleResize} alt="Elegant dimly lit room with dark furniture" src="/image-about-dark.jpg" className="w-full h-full" />
         </div>
 
         <div className="bg-white">
@@ -1850,7 +1847,7 @@ function Carousel() {
         </div>
 
         <div ref={rightAlign} className="w-full">
-            <img alt="Brightly lit white room with white chair" src="/image-about-light.jpg" className="w-full h-full" />
+            <img onLoad={handleResize} alt="Brightly lit white room with white chair" src="/image-about-light.jpg" className="w-full h-full" />
         </div>
         </div>
       </div>
