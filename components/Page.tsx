@@ -158,12 +158,10 @@ function Carousel() {
       
       if (whiteBoxPosition === 0)
       {
-        console.log("default arrow button width - 20")
         setArrowButtonWidth(20)
       }
       else
       {
-        console.log("arrow button width - ", arrowWidth)
         setArrowButtonWidth((arrowWidth / 4) - 7)
       }
 
@@ -1817,7 +1815,7 @@ function Carousel() {
               <button>
                 <div className="flex flex-row gap-x-6 transition-all ease-in-out hover:opacity-50">
                   <div className="font-semibold tracking-[0.7em]">
-                  SHOP NOW {arrowButtonWidth}
+                  SHOP NOW
                   </div>
                   <div>
                     <Image alt="Shop now button arrow" src="/icon-arrow.svg" width="36" height="12" />
