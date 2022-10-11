@@ -38,6 +38,8 @@ function Carousel() {
 
       // @ts-ignore: Object is possibly 'null'.
       setWhiteBoxPosition(rightAlign.current.offsetLeft)
+
+      
     }
 
     function handleScroll() {
@@ -141,6 +143,9 @@ function Carousel() {
           return () => window.removeEventListener("resize", handleResize)   
         }
       }
+
+      handleResize()
+
     }, [])
 
     useEffect(() => {
@@ -157,10 +162,12 @@ function Carousel() {
       
       if (whiteBoxPosition === 0)
       {
+        console.log("default arrow button width - 20")
         setArrowButtonWidth(20)
       }
       else
       {
+        console.log("arrow button width - ", arrowWidth)
         setArrowButtonWidth((arrowWidth / 4) - 7)
       }
 
