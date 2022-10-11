@@ -37,9 +37,7 @@ function Carousel() {
       setCarouselWidth(scrollCarousel.current.offsetWidth)
 
       // @ts-ignore: Object is possibly 'null'.
-      setWhiteBoxPosition(rightAlign.current.offsetLeft)
-
-      
+      setWhiteBoxPosition(rightAlign.current.offsetLeft)  
     }
 
     function handleScroll() {
@@ -1822,7 +1820,7 @@ function Carousel() {
               <button>
                 <div className="flex flex-row gap-x-6 transition-all ease-in-out hover:opacity-50">
                   <div className="font-semibold tracking-[0.7em]">
-                  SHOP NOW
+                  SHOP NOW {arrowButtonWidth}
                   </div>
                   <div>
                     <Image alt="Shop now button arrow" src="/icon-arrow.svg" width="36" height="12" />
